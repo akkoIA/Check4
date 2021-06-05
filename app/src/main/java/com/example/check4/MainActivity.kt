@@ -11,11 +11,20 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var count:Int=0
+        var count2:Int=count/4
 
         button.setOnClickListener{
             count++
             counttext.text=count.toString()
 
+            when(count2){
+                0-> print("Life is Teck!")
+                1-> print("名古屋土曜")
+                2-> print("Androidコース")
+                3->print("あみだ班")
+            }
         }
+
+
     }
 }
